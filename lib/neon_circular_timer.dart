@@ -171,7 +171,7 @@ class NeonCircularTimerState extends State<NeonCircularTimer>
   String _getTime(Duration duration) {
     // For HH:mm:ss format
     if (widget.textFormat == TextFormat.HH_MM_SS) {
-      return '${duration.inHours.toString().padLeft(2, '0')}:${(duration.inMinutes % 60).toString().padLeft(2, '0')}:${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
+      return '${duration.inHours.toString().padLeft(2, '0')}:${(duration.inMinutes % 60).toString().padLeft(2, '0')}';
     }
     // For mm:ss format
     else if (widget.textFormat == TextFormat.MM_SS) {
